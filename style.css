@@ -28,7 +28,7 @@ figure{ margin:0;}
   clear:both;
 }
 
-.videoWrapper .ratio-16-9{
+.videoWrapper.ratio-16-9{
     padding-bottom: 56.25%; 
 }
 
