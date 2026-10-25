@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="tokens.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,17 +15,21 @@
     </header>
 
     <main>
-        <h1>NYC Landmarks Virtual Tour</h1>
-        <p class="intro">This site highlights some interesting landmarks across New York City's five boroughs.</p>
+        <section class="introduction">
+            <h1>NYC Landmarks Virtual Tour</h1>
+            <p class="intro">This site highlights some interesting <a href="#gallery">landmarks</a> across New York
+                City's five boroughs.</p>
+            <p>New York City is filled with landmarks, tourist attractions and historic sites dating from before it was
+                known as New York City to more recent additions. Click through this site to explore!</p>
+            <div class="videoWrapper ratio-16-9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_xkg7pNSp9M?si=-ZVEPLCuj8zmnTqG"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
 
-        <div class="videoWrapper ratio-16-9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_xkg7pNSp9M?si=-ZVEPLCuj8zmnTqG"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-        <section class="featured-image">
+        <section class="featured-landmark">
             <h2>Featured Landmark</h2>
             <picture>
                 <source media="(min-width: 645px)" srcset="images/pexels-kelsey-caroline-774981359-19122990.jpg">
@@ -33,47 +38,77 @@
                 <img src="images/pexels-kelsey-caroline-774981359-19122990.jpg"
                     alt="Wonder Wheel ferris wheel at Coney Island">
             </picture>
+            <p>The Wonder Wheel is the iconic ferris wheel at Deno's Wonder Wheel Amusement Park in Coney Island,
+                Brooklyn. Standing 150 feet tall, it has been a centerpiece of the boardwalk skyline since its debut in
+                1920.</p>
+            <p>Coney Island has been a hub of seaside amusement for more than a century, known for its thrilling rides,
+                bright lights, and summertime energy. From the historic Cyclone roller coaster to modern attractions, it
+                remains one of New York City's most beloved destinations for fun by the beach.</p>
         </section>
 
-        <section class="landmarks">
+        <section id="gallery" class="landmarks">
             <h2>NYC Landmarks</h2>
             <div class="landmarks-grid">
-                <figure>
-                    <img src="images/squares/pexels-kelsey-caroline-774981359-19122990_square.jpg"
-                        alt="Wonder Wheel ferris wheel at Coney Island">
-                    <figcaption><a href="images/squares/pexels-kelsey-caroline-774981359-19122990_square.jpg">Photo by
-                            Kelsey Caroline</a></figcaption>
-                </figure>
-                <figure>
-                    <img src="images/squares/pexels-loquellano-12404963_square.jpg"
-                        alt="Roosevelt Island Tramway leaving Manhattan">
-                    <figcaption><a href="images/squares/pexels-loquellano-12404963_square.jpg">Photo by Raphael
-                            Loquellano</a></figcaption>
-                </figure>
-                <figure>
-                    <img src="images/squares/pexels-malcolmhill-12360516_square.jpg"
-                        alt="Yankee Stadium seen from the water with stadium title visible">
-                    <figcaption><a href="images/squares/pexels-malcolmhill-12360516_square.jpg">Photo by Malcolm Hill</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/squares/pexels-mora-versio-2150673251-34091093_square.jpg"
-                        alt="Statue of Liberty from below looking up at it">
-                    <figcaption><a href="images/squares/pexels-mora-versio-2150673251-34091093_square.jpg">Photo by Mora
-                            Versio</a></figcaption>
-                </figure>
-                <figure>
-                    <img src="images/squares/pexels-tracehudson-2424391_square.jpg"
-                        alt="Empire State Building with lower Manhattan in the background">
-                    <figcaption><a href="images/squares/pexels-tracehudson-2424391_square.jpg">Photo by Trace Hudson</a>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/squares/praswin-prakashan-YOCN1a1m_dg-unsplash_square.jpg"
-                        alt="Staten Island Ferry pulling into the dock">
-                    <figcaption><a href="images/squares/praswin-prakashan-YOCN1a1m_dg-unsplash_square.jpg">Photo by Praswin
-                            Prakashan</a></figcaption>
-                </figure>
+                <div class="card">
+                    <figure class="card-image">
+                        <img src="images/squares/pexels-kelsey-caroline-774981359-19122990_square.jpg"
+                            alt="Wonder Wheel ferris wheel at Coney Island">
+                        <figcaption><a href="images/squares/pexels-kelsey-caroline-774981359-19122990_square.jpg">Photo
+                                by
+                                Kelsey Caroline</a></figcaption>
+                    </figure>
+                    <h3 class="card-title">Wonder Wheel</h3>
+                </div>
+                <div class="card">
+                    <figure class="card-image">
+                        <img src="images/squares/pexels-loquellano-12404963_square.jpg"
+                            alt="Roosevelt Island Tramway leaving Manhattan">
+                        <figcaption><a href="images/squares/pexels-loquellano-12404963_square.jpg">Photo by Raphael
+                                Loquellano</a></figcaption>
+                    </figure>
+                    <h3 class="card-title">Roosevelt Island Tramway</h3>
+                </div>
+                <div class="card">
+                    <figure class="card-image">
+                        <img src="images/squares/pexels-malcolmhill-12360516_square.jpg"
+                            alt="Yankee Stadium seen from the water with stadium title visible">
+                        <figcaption><a href="images/squares/pexels-malcolmhill-12360516_square.jpg">Photo by Malcolm
+                                Hill</a>
+                        </figcaption>
+                    </figure>
+                    <h3 class="card-title">Yankee Stadium</h3>
+                </div>
+                <div class="card">
+                    <figure class="card-image">
+                        <img src="images/squares/pexels-mora-versio-2150673251-34091093_square.jpg"
+                            alt="Statue of Liberty from below looking up at it">
+                        <figcaption><a href="images/squares/pexels-mora-versio-2150673251-34091093_square.jpg">Photo by
+                                Mora
+                                Versio</a></figcaption>
+                    </figure>
+                    <h3 class="card-title">Statue of Liberty</h3>
+                </div>
+                <div class="card">
+                    <figure class="card-image">
+                        <img src="images/squares/pexels-tracehudson-2424391_square.jpg"
+                            alt="Empire State Building with lower Manhattan in the background">
+                        <figcaption><a href="images/squares/pexels-tracehudson-2424391_square.jpg">Photo by Trace
+                                Hudson</a>
+                        </figcaption>
+                    </figure>
+                    <h3 class="card-title">Empire State Building</h3>
+                </div>
+                <div class="card">
+                    <figure class="card-image">
+                        <img src="images/squares/praswin-prakashan-YOCN1a1m_dg-unsplash_square.jpg"
+                            alt="Staten Island Ferry pulling into the dock">
+                        <figcaption><a href="images/squares/praswin-prakashan-YOCN1a1m_dg-unsplash_square.jpg">Photo by
+                                Praswin
+                                Prakashan</a>
+                        </figcaption>
+                    </figure>
+                    <h3 class="card-title">Staten Island Ferry</h3>
+                </div>
             </div>
         </section>
     </main>
